@@ -10,7 +10,7 @@ Image processing GUI with various filtering option and adjustable parameters.
 ![''](/screenshot/selectImage.jpg "upload image")  
 
 3. Select an effect
-![''](/screenshot/image-filter-options.jpg "upload image")
+![''](/screenshot/image-filter-options.png "upload image")
 
 4. Save the processed image
 ![''](/screenshot/save.jpg "upload image")
