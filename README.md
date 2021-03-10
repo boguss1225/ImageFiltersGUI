@@ -7,7 +7,7 @@ Image processing GUI with various filtering option and adjustable parameters.
 ![Philadelphia's Magic Gardens. This place was so cool!](/screenshot/initial.jpg "Philadelphia's Magic Gardens")
 
 2. Select an image
-![''](/screenshot/selectImage.jpg "upload image")  
+![''](/screenshot/selectImage "upload image")  
 
 
 3. Select an effect
@@ -19,3 +19,27 @@ Image processing GUI with various filtering option and adjustable parameters.
 # Effects
 - Blur
 ![''](/screenshot/blur.jpg "upload image")
+
+- Black And White
+![''](/screenshot/black-and-white.jpg "upload image")  
+
+- Inverse
+![''](/screenshot/inverse.jpg "upload image")  
+
+- Unsharp
+![''](/screenshot/unsharp.jpg "upload image")  
+
+- Gaussian Blur
+![''](/screenshot/gaussian-blur.jpg "upload image")  
+
+- Canny Edge Detector
+![''](/screenshot/canny-edge-detector.jpg "upload image")  
+
+# Multiple Effects
+You can add multiple effects on the same image.
+- Blur & Black & White
+![''](/screenshot/multi-effect.jpg "upload image")
+
+
+
+
