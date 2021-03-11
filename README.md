@@ -1,37 +1,45 @@
 # ImageFiltersGUI
 
-Image processing GUI with various filtering option and adjustable parameters.  
+Image processing GUI with various filtering options and adjustable parameters.  
+
+# Feature
+* Easy & Simple interface
+* Good Extendability
+* Easy implementation
+* Various filter options
+* Adjustable filter parameters
+
 
 # Usage
 1. The initial screen  
-![Philadelphia's Magic Gardens. This place was so cool!](/screenshot/initial.jpg "Philadelphia's Magic Gardens")
+![''](/screenshot/initial.jpg "")
 
-2. Select an image
+1. Select an image
 ![''](/screenshot/selectImage.jpg "upload image")  
 
-3. Select an effect
+1. Select an effect
 ![''](/screenshot/image-filter-options.png "upload image")
 
-4. Save the processed image
+1. Save the processed image
 ![''](/screenshot/save.jpg "upload image")
 
 # Effects
-- Blur
+1. Blur
 ![''](/screenshot/blur.jpg "upload image")
 
-- Black And White
+1. Black And White
 ![''](/screenshot/black-and-white.jpg "upload image")  
 
-- Inverse
+1. Inverse
 ![''](/screenshot/inverse.jpg "upload image")  
 
-- Unsharp
+1. Unsharp
 ![''](/screenshot/unsharp.jpg "upload image")  
 
-- Gaussian Blur
+1. Gaussian Blur
 ![''](/screenshot/gaussian-blur.jpg "upload image")  
 
-- Canny Edge Detector
+1. Canny Edge Detector
 ![''](/screenshot/canny-edge-detector.jpg "upload image")  
 
 # Multiple Effects
@@ -39,6 +47,7 @@ You can add multiple effects on the same image.
 - Blur & Black & White
 ![''](/screenshot/multi-effect.jpg "upload image")
 
-
+# Acknowledgemnet.
+Special Thanks for @Tom Gibara and  @Huxtable.com
 
 

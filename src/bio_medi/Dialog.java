@@ -16,6 +16,36 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
+/*
+* Copyright 2018 Authors. All Rights Reserved.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+* ==========================================================================
+*
+* This file is part of bio-medical-image convertor program.
+*
+* Made in Soongsil University, Korea.
+*
+* @Authors : Heemoon Yoon (jcjc7890@gmail.com)
+*
+* Date : Initial Development in 2018
+*
+* For the latest version, please check the github 
+* (https://github.com/boguss1225/ImageFiltersGUI)
+* 
+* ==========================================================================
+*/
+
 class HelpDialog{
 	public  HelpDialog(JFrame f){
 		 	Dialog HelpDia = new Dialog(f,"help",true);
@@ -34,7 +64,7 @@ class HelpDialog{
 		 	HelpDia.setLayout(new FlowLayout());
 		 	
 		 	JLabel Hl1 = new JLabel("<<help>>");
-			JLabel Hl2 = new JLabel("This program is a project of 18 years of biovision");
+			JLabel Hl2 = new JLabel("This program is a part of Bio Medical Vision project in 2018");
 			JLabel Hl3 = new JLabel("Help~~~");
 			JLabel Hl4 = new JLabel("If the screen does not appear, please adjust the frame once");
 			
@@ -80,8 +110,8 @@ class AuthorDialog{
 		 	
 		 	JLabel l1 = new JLabel("<<Author Information>>");
 			JLabel l2 = new JLabel("Author : Soongsil University 20110452 Heemoon Yoon");
-			JLabel l3 = new JLabel("ihaq1@naver.com");
-			JLabel l4 = new JLabel("2018-4-05 making");
+			JLabel l3 = new JLabel("jcjc7890@gmail.com");
+			JLabel l4 = new JLabel("2018-4-05 made");
 			JButton b1 = new JButton("Confirm");
 			
 			
@@ -124,7 +154,7 @@ class ResetDialog{
 		 	
 		 	JLabel l1 = new JLabel("Would you like to restore the original image?");
 		 	JButton b1 = new JButton("Confirm");
-			JButton b2 = new JButton("cancel");
+			JButton b2 = new JButton("Cancel");
 			
 			class b1EventHandler implements ActionListener{
 				@Override
@@ -171,7 +201,7 @@ class BlacknWhiteDialog{
 			Dia.setLocation(xpos,ypos);
 			Dia.setLayout(new FlowLayout());
 		 	
-		 	JLabel l1 = new JLabel("Would you like to correct it to a black and white image");
+		 	JLabel l1 = new JLabel("Convert into black and white image");
 		 	JButton b1 = new JButton("Confirm");
 			JButton b2 = new JButton("Cancel");
 			
@@ -221,7 +251,7 @@ class inverseDialog{
 			Dia.setLocation(xpos,ypos);
 			Dia.setLayout(new FlowLayout());
 		 	
-		 	JLabel l1 = new JLabel("Would you like to correct it with a reverse image??");
+		 	JLabel l1 = new JLabel("Invert image??");
 		 	JButton b1 = new JButton("Yes");
 			JButton b2 = new JButton("No");
 			
@@ -355,7 +385,7 @@ class GaussianDialog{
 						bio_medi.staticp2.setImage(bio_medi.staticjpgImage);
 						Dia.dispose();
 					}else{
-						JOptionPane.showMessageDialog(null, "Error Occurs.");
+						JOptionPane.showMessageDialog(null, "Input Error Occured.");
 				    }
 				}}
 			b1.addActionListener(new b1EventHandler());
@@ -422,7 +452,7 @@ class BoxBlurDialog{
 						bio_medi.staticp2.setImage(bio_medi.staticjpgImage);
 						Dia.dispose();
 					}else{
-						JOptionPane.showMessageDialog(null, "Error Occurs.");
+						JOptionPane.showMessageDialog(null, "Input Error Occured.");
 				    }
 				}}
 			b1.addActionListener(new b1EventHandler());
@@ -488,7 +518,7 @@ class UnsharpDialog{
 						bio_medi.staticp2.setImage(bio_medi.staticjpgImage);
 						Dia.dispose();
 					}else{
-						JOptionPane.showMessageDialog(null, "Error Occurs.");
+						JOptionPane.showMessageDialog(null, "Input Error Occured.");
 				    }
 				}}
 			b1.addActionListener(new b1EventHandler());
@@ -567,7 +597,7 @@ class CannyDialog{
 						bio_medi.staticp2.setImage(bio_medi.staticjpgImage);
 						Dia.dispose();
 					}else{
-						JOptionPane.showMessageDialog(null, "�߸��� �Է��Դϴ�.");
+						JOptionPane.showMessageDialog(null, "Input Error Occured");
 				    }
 				}}
 			b1.addActionListener(new b1EventHandler());
