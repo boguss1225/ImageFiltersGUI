@@ -18,7 +18,7 @@ import javax.swing.JTextField;
 
 class HelpDialog{
 	public  HelpDialog(JFrame f){
-		 	Dialog HelpDia = new Dialog(f,"도움말",true);
+		 	Dialog HelpDia = new Dialog(f,"help",true);
 		 	
 		 	HelpDia.addWindowListener(new WindowAdapter(){
 				public void windowClosing(WindowEvent e){
@@ -33,12 +33,12 @@ class HelpDialog{
 		 	HelpDia.setLocation(xpos, ypos);
 		 	HelpDia.setLayout(new FlowLayout());
 		 	
-		 	JLabel Hl1 = new JLabel("<<도움말>>");
-			JLabel Hl2 = new JLabel("이 프로그램은 18년도 바이오비전의 프로젝트입니다");
-			JLabel Hl3 = new JLabel("도움말~~~");
-			JLabel Hl4 = new JLabel("화면이 안나올시 프레임을 한번 조정해주세요");
+		 	JLabel Hl1 = new JLabel("<<help>>");
+			JLabel Hl2 = new JLabel("This program is a project of 18 years of biovision");
+			JLabel Hl3 = new JLabel("Help~~~");
+			JLabel Hl4 = new JLabel("If the screen does not appear, please adjust the frame once");
 			
-			JButton Hb1 = new JButton("확인");
+			JButton Hb1 = new JButton("Confirm");
 			
 			class Hb1EventHandler implements ActionListener{
 				@Override
@@ -63,7 +63,7 @@ class HelpDialog{
 
 class AuthorDialog{
 	public AuthorDialog(JFrame f){
-		 	Dialog AuthorDia = new Dialog(f,"제작자 정보",true);
+		 	Dialog AuthorDia = new Dialog(f,"Creator information",true);
 		 	
 		 	AuthorDia.addWindowListener(new WindowAdapter(){
 				public void windowClosing(WindowEvent e){
@@ -78,11 +78,11 @@ class AuthorDialog{
 		 	AuthorDia.setLocation(xpos,ypos);
 		 	AuthorDia.setLayout(new FlowLayout());
 		 	
-		 	JLabel l1 = new JLabel("<<저자정보>>");
-			JLabel l2 = new JLabel("Author : 숭실대 20110452 윤희문");
+		 	JLabel l1 = new JLabel("<<Author Information>>");
+			JLabel l2 = new JLabel("Author : Soongsil University 20110452 Heemoon Yoon");
 			JLabel l3 = new JLabel("ihaq1@naver.com");
-			JLabel l4 = new JLabel("2018-4-05 제작");
-			JButton b1 = new JButton("확인");
+			JLabel l4 = new JLabel("2018-4-05 making");
+			JButton b1 = new JButton("Confirm");
 			
 			
 			class b1EventHandler implements ActionListener{
@@ -122,9 +122,9 @@ class ResetDialog{
 			Dia.setLocation(xpos,ypos);
 			Dia.setLayout(new FlowLayout());
 		 	
-		 	JLabel l1 = new JLabel("원본 이미지를 복원하겠습니까?");
-		 	JButton b1 = new JButton("확인");
-			JButton b2 = new JButton("취소");
+		 	JLabel l1 = new JLabel("Would you like to restore the original image?");
+		 	JButton b1 = new JButton("Confirm");
+			JButton b2 = new JButton("cancel");
 			
 			class b1EventHandler implements ActionListener{
 				@Override
@@ -171,9 +171,9 @@ class BlacknWhiteDialog{
 			Dia.setLocation(xpos,ypos);
 			Dia.setLayout(new FlowLayout());
 		 	
-		 	JLabel l1 = new JLabel("흑백이미지로 수정하겠습니까?");
-		 	JButton b1 = new JButton("확인");
-			JButton b2 = new JButton("취소");
+		 	JLabel l1 = new JLabel("Would you like to correct it to a black and white image");
+		 	JButton b1 = new JButton("Confirm");
+			JButton b2 = new JButton("Cancel");
 			
 			class b1EventHandler implements ActionListener{
 				@Override
@@ -221,9 +221,9 @@ class inverseDialog{
 			Dia.setLocation(xpos,ypos);
 			Dia.setLayout(new FlowLayout());
 		 	
-		 	JLabel l1 = new JLabel("반전이미지로 수정하겠습니까?");
-		 	JButton b1 = new JButton("확인");
-			JButton b2 = new JButton("취소");
+		 	JLabel l1 = new JLabel("Would you like to correct it with a reverse image??");
+		 	JButton b1 = new JButton("Yes");
+			JButton b2 = new JButton("No");
 			
 			class b1EventHandler implements ActionListener{
 				@Override
@@ -274,10 +274,10 @@ class ThresholdDialog{
 			Dia.setLocation(xpos,ypos);
 			Dia.setLayout(new FlowLayout());
 		 	
-		 	JLabel l1 = new JLabel("Threshold Value입력(0~255)");
+		 	JLabel l1 = new JLabel("Threshold Value input(0~255)");
 			JTextField t1 = new JTextField("0");
-		 	JButton b1 = new JButton("확인");
-			JButton b2 = new JButton("취소");
+		 	JButton b1 = new JButton("Yes");
+			JButton b2 = new JButton("No");
 			
 			class b1EventHandler implements ActionListener{
 				@Override
@@ -290,7 +290,7 @@ class ThresholdDialog{
 				    	bio_medi.staticp2.setImage(bio_medi.staticjpgImage);
 				    	Dia.dispose();
 				    }else{
-				    	JOptionPane.showMessageDialog(null, "잘못된 입력입니다.");
+				    	JOptionPane.showMessageDialog(null, "Wrong input.");
 				     }
 				}}
 			b1.addActionListener(new b1EventHandler());
@@ -334,11 +334,11 @@ class GaussianDialog{
 			Dia.setLocation(xpos,ypos);
 			Dia.setLayout(new FlowLayout());
 		 	
-		 	JLabel l1 = new JLabel("Gaussian radius Value입력(0~50)");
+		 	JLabel l1 = new JLabel("Gaussian radius Value(0~50)");
 			JTextField t1 = new JTextField("3");
 			
-		 	JButton b1 = new JButton("확인");
-			JButton b2 = new JButton("취소");
+		 	JButton b1 = new JButton("Yes");
+			JButton b2 = new JButton("No");
 			
 			class b1EventHandler implements ActionListener{
 				@Override
@@ -355,7 +355,7 @@ class GaussianDialog{
 						bio_medi.staticp2.setImage(bio_medi.staticjpgImage);
 						Dia.dispose();
 					}else{
-						JOptionPane.showMessageDialog(null, "잘못된 입력입니다.");
+						JOptionPane.showMessageDialog(null, "Error Occurs.");
 				    }
 				}}
 			b1.addActionListener(new b1EventHandler());
@@ -399,11 +399,11 @@ class BoxBlurDialog{
 			Dia.setLocation(xpos,ypos);
 			Dia.setLayout(new FlowLayout());
 		 	
-		 	JLabel l1 = new JLabel("BoxBlur radius Value입력(0~50)");
+		 	JLabel l1 = new JLabel("BoxBlur radius Value(0~50)");
 			JTextField t1 = new JTextField("3");
 			
-		 	JButton b1 = new JButton("확인");
-			JButton b2 = new JButton("취소");
+		 	JButton b1 = new JButton("Yes");
+			JButton b2 = new JButton("No");
 			
 			class b1EventHandler implements ActionListener{
 				@Override
@@ -422,7 +422,7 @@ class BoxBlurDialog{
 						bio_medi.staticp2.setImage(bio_medi.staticjpgImage);
 						Dia.dispose();
 					}else{
-						JOptionPane.showMessageDialog(null, "잘못된 입력입니다.");
+						JOptionPane.showMessageDialog(null, "Error Occurs.");
 				    }
 				}}
 			b1.addActionListener(new b1EventHandler());
@@ -466,11 +466,11 @@ class UnsharpDialog{
 			Dia.setLocation(xpos,ypos);
 			Dia.setLayout(new FlowLayout());
 		 	
-		 	JLabel l1 = new JLabel("Unsharp Threshold Value입력(0~50)");
+		 	JLabel l1 = new JLabel("Unsharp Threshold Value(0~50)");
 			JTextField t1 = new JTextField("10");
 			
-		 	JButton b1 = new JButton("확인");
-			JButton b2 = new JButton("취소");
+		 	JButton b1 = new JButton("Yes");
+			JButton b2 = new JButton("No");
 			
 			class b1EventHandler implements ActionListener{
 				@Override
@@ -488,7 +488,7 @@ class UnsharpDialog{
 						bio_medi.staticp2.setImage(bio_medi.staticjpgImage);
 						Dia.dispose();
 					}else{
-						JOptionPane.showMessageDialog(null, "잘못된 입력입니다.");
+						JOptionPane.showMessageDialog(null, "Error Occurs.");
 				    }
 				}}
 			b1.addActionListener(new b1EventHandler());
@@ -532,14 +532,14 @@ class CannyDialog{
 			Dia.setLocation(xpos,ypos);
 			Dia.setLayout(new FlowLayout());
 		 	
-		 	JLabel l1 = new JLabel("Threashold Value입력(0이상)");
+		 	JLabel l1 = new JLabel("Threashold Value( 0 or more )");
 		 	JLabel l2 = new JLabel("High : ");
 		 	JTextField t1 = new JTextField("1");
 		 	JLabel l3 = new JLabel("Low : ");
 			JTextField t2 = new JTextField("0.5");
 			
-		 	JButton b1 = new JButton("확인");
-			JButton b2 = new JButton("취소");
+		 	JButton b1 = new JButton("Yes");
+			JButton b2 = new JButton("No");
 			
 			class b1EventHandler implements ActionListener{
 				@Override
@@ -567,7 +567,7 @@ class CannyDialog{
 						bio_medi.staticp2.setImage(bio_medi.staticjpgImage);
 						Dia.dispose();
 					}else{
-						JOptionPane.showMessageDialog(null, "잘못된 입력입니다.");
+						JOptionPane.showMessageDialog(null, "占쌩몌옙占쏙옙 占쌉뤄옙占쌉니댐옙.");
 				    }
 				}}
 			b1.addActionListener(new b1EventHandler());
